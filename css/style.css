@@ -1,0 +1,313 @@
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow:hidden ;
+    text-decoration: none;
+}
+
+/* utility classes */
+.flex{
+    display: flex;
+}
+
+.justify_between{
+    justify-content: space-between;
+}
+
+.justify_evenly{
+    justify-content: space-evenly;
+}
+
+.justify_center{
+    justify-content: center;
+}
+
+.align_center{
+    align-items: center;
+}
+
+.text_center{
+    text-align: center;
+}
+
+.flex_1{
+    flex: 1;
+}
+
+.btn{
+    background-color:#FE7000 ;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.7rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    cursor: pointer;
+
+}
+
+/* main css */
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper .container .sidebar img{
+    width: 100%;
+    height: 80%;
+}
+
+.wrapper .container .hero img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    object-fit: cover;
+}
+
+
+/* hero section */
+.wrapper .container .hero{
+    position: relative;
+}
+
+.wrapper .container .hero::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FE7000;
+    opacity: 0.20;
+    
+}
+
+.wrapper .container .hero .content{
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.wrapper .container .hero .content .heading{
+    margin-bottom: 1.5rem;
+}
+
+.wrapper .container .hero .content .heading h1{
+    font-weight: 500;
+    line-height: 1.5;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+
+}
+
+.wrapper .container .hero .content button{
+    margin-left: 3rem;
+}
+
+.wrapper .container .hero .content button img{
+    width: 20px;
+    height: 20px;
+    margin-right: 0.75rem;
+}
+
+.wrapper .container .hero .lines img{
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%,-25%);
+    -webkit-transform: translate(-50%,-25%);
+    -moz-transform: translate(-50%,-25%);
+    -ms-transform: translate(-50%,-25%);
+    -o-transform: translate(-50%,-25%);
+    height: auto;
+    width: 200px;
+}
+
+.wrapper .container .hero .corner_logo{
+    position: absolute;
+    bottom: 19%;
+    right: 0.5%;
+    transform: translate(-0.5%,-19%);
+    -webkit-transform: translate(-0.5%,-18%);
+    -moz-transform: translate(-0.5%,-18%);
+    -ms-transform: translate(-0.5%,-18%);
+    -o-transform: translate(-0.5%,-18%);
+}
+
+.wrapper .container .hero .corner_logo > div{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color:#fe6e00d2 ;
+}
+
+/* sidebar code */
+.wrapper .container .sidebar{
+    position: relative;
+}
+
+.wrapper .container .sidebar h4{
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    transform: translateY(-8%,-8%);
+    -webkit-transform: translateY(-8%,-8%);
+    -moz-transform: translateY(-8%,-8%);
+    -ms-transform: translateY(-8%,-8%);
+    -o-transform: translateY(-8%,-8%);
+    color: #fff;
+    font-weight: 200;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.wrapper .container .sidebar > div img{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 22%;
+    left: 34%;
+    transform: translateY(-22%,-34%);
+    -webkit-transform: translateY(-22%,-34%);
+    -moz-transform: translateY(-22%,-34%);
+    -ms-transform: translateY(-22%,-34%);
+    -o-transform: translateY(-22%,-34%);
+}
+
+.wrapper .container .sidebar h3{
+    text-transform: capitalize;
+    color: #FE7000;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 34%;
+    left: 14%;
+    transform: translateY(-34%,-14%);
+    -webkit-transform: translateY(-22%,-34%);
+    -moz-transform: translateY(-22%,-34%);
+    -ms-transform: translateY(-22%,-34%);
+    -o-transform: translateY(-22%,-34%);
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.wrapper .container .sidebar ul{
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    transform: translateY(-40%,-14%);
+    -webkit-transform: translateY(-22%,-34%);
+    -moz-transform: translateY(-22%,-34%);
+    -ms-transform: translateY(-22%,-34%);
+    -o-transform: translateY(-22%,-34%);
+}
+
+.wrapper .container .sidebar ul img{
+    height: 25px;
+    width: 25px;
+    margin-right: 0.75rem;
+}
+
+
+
+.wrapper .container .sidebar ul li{
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.wrapper .container .sidebar ul li a{
+    display: block;
+    width: 100%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem ;
+    padding-bottom: 0.1rem;
+}
+
+.wrapper .container .sidebar ul li.active{
+    background-color: #ffb880;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 250px;
+   
+}
+
+.wrapper .container .sidebar ul li:hover{
+    background-color: #ffb880;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 250px;
+}
+
+.wrapper .container .sidebar ul li a span{
+    width: 100%;
+}
+
+
+.wrapper .container .sidebar ul.footer{
+    width: 100%;
+    position: absolute;
+    top: 76%;
+    left: 0%;
+    transform: translateY(-76%,-0%);
+    -webkit-transform: translateY(-76%,-0%);
+    -moz-transform: translateY(-76%,-0%);
+    -ms-transform: translateY(-76%,-0%);
+    -o-transform: translateY(-76%,-0%);
+}
+.wrapper .container .sidebar ul.footer li a{
+    font-size: 0.4rem;
+    margin-left: 2px;
+    color: #fff;
+    padding: 0.06rem 0.15rem;
+    font-weight: 500;
+}
+
+.wrapper .container .sidebar ul.footer li a.active{
+    color: #000;
+    background-color: #fff;
+}
+
+.wrapper .container .sidebar ul.footer li:last-child img{
+    width: 20px;
+    height: 5px;
+    background-size: cover;
+}
+
+.wrapper .container .sidebar .copyright{
+    font-size: 0.4rem;
+    color: #fff;
+}
+
+.wrapper .container .sidebar .copyright{
+    width: 100%;
+    position: absolute;
+    top: 78.5%;
+    left: 0%;
+    transform: translateY(-78.5%,-0%);
+    -webkit-transform: translateY(-76%,-0%);
+    -moz-transform: translateY(-76%,-0%);
+    -ms-transform: translateY(-76%,-0%);
+    -o-transform: translateY(-76%,-0%);
+}
